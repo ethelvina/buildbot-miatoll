@@ -1,9 +1,9 @@
 #!/bin/bash
 cd /tmp/rom # Depends on where source got synced
-rm -rf .repo & # lets remove unnecessary things, so that no storage issue can occur
+rm -rf .repo # lets remove unnecessary things, so that no storage issue can occur
 
 # Normal build steps
-source build/envsetup.sh
+. build/envsetup.sh
 lunch lineage_merlin-userdebug
 export SELINUX_IGNORE_NEVERALLOWS=true
 export CCACHE_DIR=/tmp/ccache
