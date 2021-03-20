@@ -21,3 +21,4 @@ git clone https://github.com/Redmi-MT6768/android_vendor_xiaomi_merlin.git -b te
 rm -rf device/mediatek/sepolicy && git clone --depth=1 --single-branch https://github.com/PixelExperience/device_mediatek_sepolicy device/mediatek/sepolicy
 rm -rf vendor/mediatek/interfaces && git clone --depth=1 --single-branch https://github.com/PixelExperience/vendor_mediatek_interfaces vendor/mediatek/interfaces
 rm -rf vendor/mediatek/opensource && git clone --depth=1 --single-branch https://github.com/PixelExperience/vendor_mediatek-opensource vendor/mediatek/opensource
+rm -rf vendor/mediatek/ims && git clone https://github.com/Redmi-MT6768/android_vendor_mediatek_ims.git -b eleven vendor/mediatek/ims
