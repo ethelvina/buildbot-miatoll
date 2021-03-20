@@ -24,7 +24,7 @@ make_metalava(){
 }
 
 make_rom(){
-	make bacon -j20
+	make bacon -j22
 	zip=$(up out/target/product/merlin/*zip)
 	echo " "
 	echo "$zip"
