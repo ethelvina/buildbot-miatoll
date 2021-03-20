@@ -6,7 +6,6 @@ rm -rf .repo & # lets remove unnecessary things, so that no storage issue can oc
 source build/envsetup.sh
 export SAKURA_BUILD_TYPE=gapps
 lunch lineage_merlin-userdebug
-export SELINUX_IGNORE_NEVERALLOWS=true
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
