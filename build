@@ -25,11 +25,11 @@ make_metalava(){
 }
 
 make_rom(){
-	make bacon -j22
+	make bacon -j16
 	zip=$(up out/target/product/merlin/*zip)
 	echo " "
 	echo "$zip"
 }
 
 make_metalava && make_rom
-sleep 5200 && kill "$!"
+sleep 10 && kill "$!"
