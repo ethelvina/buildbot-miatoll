@@ -17,7 +17,7 @@ ccache -o compression=true
 ccache -z
 
 up(){
-	curl --upload-file $1 https://transfer.sh/
+	curl bashupload.com -T $1
 }
 
 make_metalava(){
