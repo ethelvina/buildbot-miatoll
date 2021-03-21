@@ -16,7 +16,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 #merlin stuff
 git clone  https://github.com/Redmi-MT6768/android_device_xiaomi_merlin.git-b lineage-18.1 device/xiaomi/merlin
-git clone https://github.com/Redmi-MT6768/android_kernel_xiaomi_mt6768.git -b eleven kernel/xiaomi/mt6768
+git clone https://github.com/boxboi689/android_kernel_xiaomi_mt6768.git -b eleven kernel/xiaomi/mt6768
 git clone https://github.com/Redmi-MT6768/android_vendor_xiaomi_merlin.git -b eleven vendor/xiaomi/merlin
 rm -rf device/mediatek/sepolicy && git clone --depth=1 --single-branch https://github.com/PixelExperience/device_mediatek_sepolicy device/mediatek/sepolicy
 rm -rf vendor/mediatek/interfaces && git clone --depth=1 --single-branch https://github.com/PixelExperience/vendor_mediatek_interfaces vendor/mediatek/interfaces
