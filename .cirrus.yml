@@ -5,19 +5,13 @@ env: # Environt variable to pass to all tasks
 
 task:
     name: StatixJob
-    timeout_in: 460m
+    timeout_in: 240m
     container:
       image: apon77/aosp:latest
       cpu: 16
-      memory: 36G
-    zram_script:
-      - bash zram
-    download_ccache_script:
-      - ./download_ccache
+      memory: 40G
     sync_script:
       - ./sync
     build_script:
       - ./build
-    upload_ccache_script:
-      - ./upload_ccache
 #start build right fucking now
