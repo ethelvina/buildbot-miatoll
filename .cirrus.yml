@@ -10,6 +10,8 @@ task:
       image: apon77/aosp:latest
       cpu: 16
       memory: 36G
+    zram_script:
+      - bash zram
     download_ccache_script:
       - ./download_ccache
     sync_script:
