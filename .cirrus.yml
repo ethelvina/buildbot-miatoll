@@ -5,11 +5,11 @@ env: # Environt variable to pass to all tasks
 
 task:
     name: StatixJob
-    timeout_in: 460m
+    timeout_in: 120m
     container:
       image: apon77/aosp:latest
-      cpu: 16
-      memory: 40G
+      cpu: 10
+      memory: 24G
     download_ccache_script:
       - ./download_ccache
     sync_script:
@@ -18,4 +18,3 @@ task:
       - ./build
     upload_ccache_script:
       - ./upload_ccache
-#start build rn
