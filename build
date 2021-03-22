@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /tmp/rom # Depends on where source got synced
-
+rm -rf .repo
 # Normal build
 source build/envsetup.sh
 export SAKURA_BUILD_TYPE=gapps
